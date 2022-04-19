@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Header = () => {
 	return (
-		<header className="text-[#e2a1ff] bg-[#f9ec96] body-font">
+		<header className="text-[#e2a1ff] bg-[#f9ec96] body-font h-28">
 			<div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 				<a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
 					<Image

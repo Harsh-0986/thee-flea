@@ -1,8 +1,22 @@
 import Head from "next/head";
 import Header from "../components/Header";
-import styles from "../styles/Home.module.css";
+import { useEffect, useState } from "react";
+import NavbarMobile from "../components/NavbarMobile";
+import NavBarDesktop from "../components/NavBarDesktop";
 
 export default function Home() {
+	const [mobileDevice, setMobileDevice] = useState(false);
+
+	useEffect(() => {
+		let details = navigator.userAgent;
+
+		// Checking whether the webpage is opened on mobile or pc.
+		let regexp = /android|iphone|kindle|ipad/i;
+		let isMobileDevice = regexp.test(details);
+
+		setMobileDevice(isMobileDevice);
+	}, []);
+
 	return (
 		<div>
 			<Head>
@@ -10,7 +24,9 @@ export default function Home() {
 			</Head>
 
 			{/* Header */}
+			{mobileDevice && <NavbarMobile />}
 			<Header />
+			{!mobileDevice && <NavBarDesktop />}
 		</div>
 	);
 }
