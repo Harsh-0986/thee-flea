@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import NavbarMobile from "../components/NavbarMobile";
 import NavBarDesktop from "../components/NavBarDesktop";
 import MainDiv from "../components/MainDiv";
+import UpComingEvents from "../components/UpComingEvents";
 
 export default function Home() {
 	const [mobileDevice, setMobileDevice] = useState(false);
@@ -31,6 +32,9 @@ export default function Home() {
 
 			{/* Main Div */}
 			<MainDiv />
+
+			{/* Upcoming events */}
+			<UpComingEvents />
 		</div>
 	);
 }
