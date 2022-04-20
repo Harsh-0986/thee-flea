@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import { useEffect, useState } from "react";
 import NavbarMobile from "../components/NavbarMobile";
 import NavBarDesktop from "../components/NavBarDesktop";
+import MainDiv from "../components/MainDiv";
 
 export default function Home() {
 	const [mobileDevice, setMobileDevice] = useState(false);
@@ -27,6 +28,9 @@ export default function Home() {
 			{mobileDevice && <NavbarMobile />}
 			<Header />
 			{!mobileDevice && <NavBarDesktop />}
+
+			{/* Main Div */}
+			<MainDiv />
 		</div>
 	);
 }
