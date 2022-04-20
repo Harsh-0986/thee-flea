@@ -5,6 +5,7 @@ import NavbarMobile from "../components/NavbarMobile";
 import NavBarDesktop from "../components/NavBarDesktop";
 import MainDiv from "../components/MainDiv";
 import UpComingEvents from "../components/UpComingEvents";
+import SubscribeForm from "../components/SubscribeForm";
 
 export default function Home() {
 	const [mobileDevice, setMobileDevice] = useState(false);
@@ -35,6 +36,9 @@ export default function Home() {
 
 			{/* Upcoming events */}
 			<UpComingEvents />
+
+			{/* SubscribeForm */}
+			<SubscribeForm />
 		</div>
 	);
 }
