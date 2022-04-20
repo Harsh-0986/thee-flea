@@ -2,7 +2,7 @@ import EventCard from "./EventCard";
 
 const UpComingEvents = () => {
 	return (
-		<div className="flex flex-col justify-center align-center items-center mb-2 bg-[#e2a1ff]">
+		<div className="flex flex-col justify-center align-center items-center mb-2 bg-[#e2a1ff] pb-4">
 			<h2 className="text-2xl text-[#f9ec96] bg-[#e2a1ff] py-4 w-full text-center">
 				Upcoming Events
 			</h2>

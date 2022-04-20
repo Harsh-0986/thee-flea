@@ -6,6 +6,7 @@ import NavBarDesktop from "../components/NavBarDesktop";
 import MainDiv from "../components/MainDiv";
 import UpComingEvents from "../components/UpComingEvents";
 import SubscribeForm from "../components/SubscribeForm";
+import Footer from "../components/Footer";
 
 export default function Home() {
 	const [mobileDevice, setMobileDevice] = useState(false);
@@ -39,6 +40,9 @@ export default function Home() {
 
 			{/* SubscribeForm */}
 			<SubscribeForm />
+
+			{/* Footer */}
+			<Footer />
 		</div>
 	);
 }

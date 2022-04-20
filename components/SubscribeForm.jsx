@@ -1,6 +1,6 @@
 const SubscribeForm = () => {
 	return (
-		<div className="w-[50%] mx-auto flex flex-col align-center justify-center items-center">
+		<div className="w-[60%] md:w-[60%] mx-auto flex flex-col align-center justify-center items-center">
 			<span className="my-6 text-2xl font-bold text-pink-400">
 				Subscribe Form
 			</span>
